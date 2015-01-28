@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Musings of Asutosh Palai...Intrests</title>
+    <meta name="description" content="My Profile">
+    <meta name="author" content="Asutosh Palai">
+    <meta charset="UTF-8">
+    <style>
+ 
+
+// The important stuff starts here
+.article-wrap {
+  margin-right: 220px;
+}
+.article-content,
+.sidebar {
+  box-sizing: border-box;
+  background: Aquamarine;
+  float: left;
+  padding: 20px;
+}
+.sidebar:after,
+.article-content:after {
+  background: shade(Aquamarine, 3%);
+  content: ""; // Needed
+  display: block; // Needed
+  height: 5000px; // Very large value
+  position: fixed; top: 0; // Needed
+}
+.article-content {
+  border-color: white;
+  border-style: solid;
+  border-width: 20px 0 0 20px;
+  width: 100%;
+  &:after {
+    left: 20px; // Positioning
+    width: 100%;
+    z-index: -1;
+  }
+}
+.sidebar,
+.sidebar:after {
+  // These borders are rather important
+  // Put them in blue or red to see how it works
+  border-color: white;
+  border-style: solid;
+  border-width: 20px 20px 0 20px;
+  box-sizing: border-box;
+  width: 220px;
+  z-index: -1;
+}
+.sidebar:after {
+  right: 0;
+}
+
+
+
+// Just irrelevant styling
+h1,
+h2,
+p {
+  margin: 0 0 15px 0;
+}
+h2 {
+  font-size: 20px;
+}
+ul {
+  padding-left: 20px;
+}
+    </style>
+</head>
+
+<body>
+    
+
+
+<section class="article-wrap">
+  <article class="article-content">
+    <h1>2 columns, both 100% height</h1>
+    <p>
+      No images, no extra elements.
+    </p>
+    <p>
+      The content area is fluid width, while the sidebar staying fixed width. No hacks, no bullsit just normal CSS.
+    </p>
+    <p>
+      The pseudo elements that make the columns 100% height are discolored a bit to illustrate how it works.
+    </p>
+    <p>
+      If you're not reading my blog article about this, <a href="http://clubmate.fi/100-percent-height-columns-fixed-width-sidebar-pure-css-solutions-to-commons-fluid-layout-problems">you may want to.</a>
+    </p>
+  </article>
+</section>
+<aside class="sidebar">
+  <h2>Sidebar</h2>
+  <ul>
+    <li>Lorem.</li>
+    <li>Natus.</li>
+    <li>Voluptatibus.</li>
+    <li>Esse!</li>
+    <li>Laudantium.</li>
+  </ul>
+</aside>
+    </body>
+    </html>

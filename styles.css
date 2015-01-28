@@ -1,0 +1,93 @@
+
+body{
+    font-family: Georgia, serif;
+
+            margin:0;
+            padding: 0;
+    background-color: #8BA6AD;
+    background: -webkit-linear-gradient(top, rgba(4,118,217,1) 0%, rgba(31,31,31,1) 100%);
+background: -o-linear-gradient(top, rgba(4,118,217,1) 0%, rgba(31,31,31,1) 100%);
+background: -ms-linear-gradient(top, rgba(4,118,217,1) 0%, rgba(31,31,31,1) 100%);
+background: linear-gradient(to bottom, rgba(4,118,217,1) 0%, rgba(31,31,31,1) 100%);
+    background-image:  url("treehill.png"),url("sky.Jjpg");
+    background-repeat: no-repeat;
+    background-position:  right bottom, left top;
+    background-attachment: fixed;
+        }
+        
+        nav {
+            background: rgba(63, 49, 77, 0.63);
+	  padding: 4px;
+            float: left;
+            z-index: 19;
+    width: 18%;
+	    font-size:1.6em;
+	    font-weight:400;
+            height:550px;
+        }
+
+
+nav #inner {
+    position: fixed;
+}
+        footer {
+            clear: both;
+        }
+        #copyright {
+            float:right;
+        }
+        #content {
+            
+            width: 80%;
+            background: rgba(164, 119, 248, 0.67);
+            float: left;
+            height:550px;
+        padding:4px;
+             overflow-y: scroll;
+	}
+
+
+
+nav a {
+    display: inline-block;
+    height: 40px;
+    width:100%;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(128, 87, 175, 0.87);
+    background: rgba(173, 117, 117, 0.65);
+}
+nav li {
+    display: inline-block;
+    height: 40px;
+    width:100%;
+}
+
+.active {
+    display: inline-block;
+    height: 40px;
+    width:100%;
+    border-width: 1px 0px;
+    border-style: solid;
+    border-color: rgba(128, 87, 175, 0.87);
+    background: rgba(93, 50, 50, 0.81);
+    font-weight:700;
+
+}
+	a:link, a:visited, a:hover , a:active {
+    text-decoration: none;
+    color: #331f29;
+    }
+	
+	
+	fieldset {
+	  border: none;
+	}
+
+.fsbold {
+    font-weight: bold;
+}
+
+footer {
+    background: #5C8AE6;
+}
